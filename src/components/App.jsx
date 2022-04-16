@@ -26,6 +26,7 @@ class App extends React.Component {
             <Route path="product" element={<ProductInfo/>} />
             <Route path='/products/searched' element={<SearchedProduct/>} />
           </Routes>
+          {console.log('log')}
         </React.Fragment>
       </ProductProvider>
     );
