@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/github.io/Phonestore/static/css/main.1c6aa8ef.chunk.css",
-    "main.js": "/github.io/Phonestore/static/js/main.3af27e68.chunk.js",
-    "main.js.map": "/github.io/Phonestore/static/js/main.3af27e68.chunk.js.map",
-    "runtime-main.js": "/github.io/Phonestore/static/js/runtime-main.7af7918c.js",
-    "runtime-main.js.map": "/github.io/Phonestore/static/js/runtime-main.7af7918c.js.map",
-    "static/css/2.e9a543f3.chunk.css": "/github.io/Phonestore/static/css/2.e9a543f3.chunk.css",
-    "static/js/2.bd67d5f6.chunk.js": "/github.io/Phonestore/static/js/2.bd67d5f6.chunk.js",
-    "static/js/2.bd67d5f6.chunk.js.map": "/github.io/Phonestore/static/js/2.bd67d5f6.chunk.js.map",
-    "index.html": "/github.io/Phonestore/index.html",
-    "static/css/2.e9a543f3.chunk.css.map": "/github.io/Phonestore/static/css/2.e9a543f3.chunk.css.map",
-    "static/css/main.1c6aa8ef.chunk.css.map": "/github.io/Phonestore/static/css/main.1c6aa8ef.chunk.css.map",
-    "static/js/2.bd67d5f6.chunk.js.LICENSE.txt": "/github.io/Phonestore/static/js/2.bd67d5f6.chunk.js.LICENSE.txt",
-    "static/media/font-awesome.min.css": "/github.io/Phonestore/static/media/fontawesome-webfont.f691f37e.woff"
+    "main.css": "/Phonestore/static/css/main.1c6aa8ef.chunk.css",
+    "main.js": "/Phonestore/static/js/main.3af27e68.chunk.js",
+    "main.js.map": "/Phonestore/static/js/main.3af27e68.chunk.js.map",
+    "runtime-main.js": "/Phonestore/static/js/runtime-main.c9e4cbca.js",
+    "runtime-main.js.map": "/Phonestore/static/js/runtime-main.c9e4cbca.js.map",
+    "static/css/2.43d271d6.chunk.css": "/Phonestore/static/css/2.43d271d6.chunk.css",
+    "static/js/2.bd67d5f6.chunk.js": "/Phonestore/static/js/2.bd67d5f6.chunk.js",
+    "static/js/2.bd67d5f6.chunk.js.map": "/Phonestore/static/js/2.bd67d5f6.chunk.js.map",
+    "index.html": "/Phonestore/index.html",
+    "static/css/2.43d271d6.chunk.css.map": "/Phonestore/static/css/2.43d271d6.chunk.css.map",
+    "static/css/main.1c6aa8ef.chunk.css.map": "/Phonestore/static/css/main.1c6aa8ef.chunk.css.map",
+    "static/js/2.bd67d5f6.chunk.js.LICENSE.txt": "/Phonestore/static/js/2.bd67d5f6.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/Phonestore/static/media/fontawesome-webfont.f691f37e.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.7af7918c.js",
-    "static/css/2.e9a543f3.chunk.css",
+    "static/js/runtime-main.c9e4cbca.js",
+    "static/css/2.43d271d6.chunk.css",
     "static/js/2.bd67d5f6.chunk.js",
     "static/css/main.1c6aa8ef.chunk.css",
     "static/js/main.3af27e68.chunk.js"
