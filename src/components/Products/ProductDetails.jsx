@@ -7,7 +7,7 @@ import { ProductContext, ProductConsumer } from '../Context';
 
 function ProductDetails() {
   const context = useContext(ProductContext)
-  const {getItem, addToCart, detail_product} = context
+  const {getItem, addToCart, detail_product, cart} = context
   const {id} = detail_product[0]
   const product= getItem(id)
   const {item, image, price, details, inCart} = product[0]
@@ -41,7 +41,7 @@ function ProductDetails() {
         <Link to='/products' className='link'>
           <button className='styledbutton'>products</button>
         </Link>
-        {inCart?
+        {cart.find((item)=>(item.id===id))?
           <button className="styledbutton">incart</button>:
           <button className='styledbutton' onClick={()=>{addToCart(id, price)}}>Add to cart</button>
         }

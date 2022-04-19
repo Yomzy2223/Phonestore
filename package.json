@@ -14,7 +14,6 @@
     "styled-components": "^5.3.3",
     "web-vitals": "^1.1.2"
   },
-  "main": "/public/index.html",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

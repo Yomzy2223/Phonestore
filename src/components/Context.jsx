@@ -125,8 +125,9 @@ export default class ProductProvider extends React.Component {
         return null
       }
     })
-    this.handleTotal(price)
+    this.handleTotal(-price)
     this.setState(()=> ({cart: Cart}))
+    console.log(this.state.cart)
   }
   clearCart = () => {
     const Cart = [...this.state.cart]
