@@ -1,24 +1,23 @@
 import React from 'react';
 import { useContext, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ProductConsumer } from "../Context";
 import { ProductContext } from '../Context';
 
 
 function ProductSearch(props) {
   const [isOpen, setState] = useState(false)
-  // const [newStyle, setnewStyle] = useState('')
+  const Input = React.useRef(null)
 
   const context = useContext(ProductContext)
   const {search_input, handleChange, handleSearchClick, products, instantUpdate, clearSearchInput} = context
   const {onProductsPage} = props
 
   const suggestionContainer = React.useRef(null)
-    const clickOutsideSuggestion = (e) => {
-      if(isOpen && !suggestionContainer?.current?.contains(e.target)){
-        setState(false)
-      }
+  const clickOutsideSuggestion = (e) => {
+    if(isOpen && !suggestionContainer?.current?.contains(e.target)){
+      setState(false)
     }
+  }
     
   useEffect (()=>{
   if(isOpen){
@@ -33,6 +32,9 @@ function ProductSearch(props) {
   const handleChangeWithin = (e) =>{
     handleChange(e)
     setState(true)
+    if(Input.current!==null){
+      Input.current.focus()
+    }
   }
   const updateAndUnmount = (product) =>{
     instantUpdate(product)
@@ -48,6 +50,7 @@ function ProductSearch(props) {
   var id=1;
   return (
     <div className={`products-search${newStyle}`} ref={suggestionContainer}>
+      {console.log('This component just rendered')}
       <div className='search'>
         <input type="text" placeholder='Search...' value={search_input} onChange={handleChangeWithin}/>
         {search_input && 
@@ -67,7 +70,7 @@ function ProductSearch(props) {
           products.filter((product) => (search_input=== '' ? product: product.toLowerCase().includes(search_input.toLowerCase()))).map((product)=> {
             if(id<10){
               return(
-                <p id="product-each" onClick={()=>{updateAndUnmount(product)}} key={product+id++}>{product}</p>
+                <p ref={Input} id="product-each" onClick={()=>{updateAndUnmount(product)}} key={product+id++}>{product}</p>
               )
             }else {return null}
           })
@@ -79,5 +82,4 @@ function ProductSearch(props) {
     </div>
   );
 }
-
 export default ProductSearch;

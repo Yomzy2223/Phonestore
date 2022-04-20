@@ -19,14 +19,13 @@ class App extends React.Component {
           <Navbar/>
           <Routes>
             <Route path='/' element={<ProductsPage/>}/>
-            <Route path='/products' element={<ProductsPage/>}/>
-            <Route path='/product/details' element={<ProductDetails/>} />
-            <Route path='/cart' element={<CartPage/>} />
+            <Route path='products' element={<ProductsPage/>}/>
+            <Route path='product/details' element={<ProductDetails/>} />
+            <Route path='cart' element={<CartPage/>} />
             <Route path='*' element={<Default/>} />
             <Route path="product" element={<ProductInfo/>} />
-            <Route path='/products/searched' element={<SearchedProduct/>} />
+            <Route path='products/searched' element={<SearchedProduct/>} />
           </Routes>
-          {console.log('log')}
         </React.Fragment>
       </ProductProvider>
     );
