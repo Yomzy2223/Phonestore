@@ -1,6 +1,5 @@
 {
-  "homepage": "https://yomzy2223.github.io/Phonestore",
-  "name": "Phone Store",
+  "name": "phone_store",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

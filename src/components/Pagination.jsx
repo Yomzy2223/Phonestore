@@ -2,6 +2,7 @@ import React, {useState, useEffect, useContext} from 'react';
 import {ProductContext} from './Context'
 
 var pageNumbers = []
+
 function Pagination() {
   const [navButtonIndex, setn] = useState(4)
   const [initialRun, setInitialRun] = useState(true)
